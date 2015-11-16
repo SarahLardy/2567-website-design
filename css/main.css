@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@charset "UTF-8";
+/* CSS Document */
+
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -16,6 +19,10 @@
 	content:" ";
 	display: table;
 	clear: both;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -35,6 +42,233 @@ img {
 	padding-right: 0;
 }
 
+/*---------------Backgrounds----------*/
+
+#header {
+	background: #c5db6e;
+	height: 100px;
+}
+
+#hero {
+	background-image: url(../img/hero-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 75px;
+	padding-top: 30px;
+}
+
+#services {
+	background: #dbeef4;
+	padding-bottom: 60px;
+	padding-top: 15px;
+}
+
+#choose {
+	background: #346eac;
+	padding-top: 15px;
+	padding-bottom: 60px;
+}
+
+#contact {
+	background: #dbeef4;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+#footer {
+	background: #c5db6e;
+}
+
+#about {
+	padding-bottom: 25px;
+}
+
+#conference {
+	padding-bottom: 20px;
+}
+
+/*--------Backgrounds-----------*/
+
+/*--------Headers-----------*/
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	margin: 0 auto;
+	float: right;
+	padding-top: 50px;
+}
+
+h1 p {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+h3 {
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+}
+
+
+
+/*--------Typography-----------*/
+p {
+	font-size: 12px;
+}
+
+#choose {
+	color: white;
+}
+
+#choose h3 {
+	text-align: left;
+}
+
+#choose p {
+	line-height: 24px;
+	width: 400px;
+	font-size: 15px;
+}
+
+#services {
+	line-height: 24px;
+}
+
+
+#about p {
+	text-align: center;
+	line-height: 24px;
+}
+
+#conference p, #contact p {
+	text-align: center;	
+}
+
+#contact p {
+	padding-top: 0;
+}
+
+.col-1-2 p {
+	text-align: left;
+}
+
+/*--------Typography-----------*/
+
+/*--------Images-----------*/
+img {
+	padding-left: 70px;	
+}
+
+.paper {
+	height: 95px;
+}
+
+.logo {
+	position: relative;
+	padding-top: 35px;
+}
+
+#icon {
+	padding-left: 400px;
+}
+
+#contact img {
+	height: 20px;
+}
+/*--------Images-----------*/
+/*--------Navigation-----------*/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+}
+
+nav {
+	padding-left: 700px;
+	word-spacing: 50px;
+	float: right;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+a:hover {
+	color: white;
+}
+/*--------Navigation-----------*/
+
+/*--------Buttons-----------*/
+
+#button-one, #button-two, #button-three {
+	text-align: center;
+	font-size: 16px;
+}
+
+#button-one a, #button-two a, #button-three a {
+	background-color: #c5db6e;
+	padding: 10px 35px;
+}
+
+#button-one a:hover, #button-two a:hover {
+	background-color: #346eac;
+	color: white;
+}
+
+#button-three a:hover {
+	color: #346eac;
+	background-color: #dbeef4;
+}
+
+/*--------Buttons-----------*/
+
+/*--------Form-----------*/
+
+form {
+	align: center;
+	padding-left: 70px;
+}
+
+form label {
+	font-size: 16px;
+}
+
+input[type="text"] {
+	width: 500px;
+	height: 40px;
+	display: block;
+}
+
+input[type~="email"] {
+	width: 500px;
+	height: 40px;
+	display: block;
+}
+
+textarea {
+	width: 400px;
+	height: 150px;
+	display: block;
+	float: left;
+}
+
+/*--------Form-----------*/
+
+/*Columns*/
+
 .col-1-1 {
 	width: 100%;
 }
@@ -51,18 +285,105 @@ img {
 	width: 25%;
 }
 
+.col-1-5 {
+	width: 20%;
+}
+
+.col-1-6 {
+	width: 16.66%;
+}
+
+.col-1-7 {
+	width: 14.28%;
+}
+
+.col-1-8 {
+	width: 12.5%;
+}
+
+.col-1-9 {
+	width: 11.11%;
+}
+
+.col-1-10 {
+	width: 10%;
+}
+
+.col-1-11 {
+	width: 9.09%;
+}
+
+.col-1-12 {
+	width: 8.33%;
+}
+
 
 /*-----------------------------------*/
+
+.col-2-3 {
+	width: 66.66%;
+}
+
+.col-3-4 {
+	width: 75%;
+}
+
+.col-4-5 {
+	width: 80%;
+}
+
+.col-5-6 {
+	width: 83.33%;
+}
+
+.col-5-7 {
+	width: 71.42%;
+}
+
+.col-2-7 {
+	width: 28.57%;
+}
+
+.col-4-8 {
+	width: 50%;
+}
+
+.col-3-9 {
+	width: 33.33%;
+}
+
+.col-6-9 {
+	width: 66.66%;
+}
+
+.col-2-10 {
+	width: 20%;
+}
 
 .col-8-10 {
 	width: 80%;
 }
 
+.col-5-11 {
+	width: 45.45%;
+}
+
+.col-6-11 {
+	width: 54.54%;
+}
+
+.col-7-12 {
+	width: 58.33%;
+}
+
+.col-5-12 {
+	width: 41.66%;
+}
+
 /*--------------------------------------*/
 
 .col-1-1 div {
-	height: 300px;
-	background-color: pink;
+	height: 100px;
 }
 
 .col-1-2 div {
@@ -75,19 +396,124 @@ img {
 	background-color: green;
 }
 
-
+.col-2-3 div {
+	height: 300px;
+	background-color: purple;
+}
 
 .col-1-4 div {
 	height: 300px;
 	background-color: blue;
 }
 
-.col-8-10 div {
+.col-3-4 div {
+	height: 300px;
+	background-color: red;
+}
+
+.col-1-5 div {
+	height: 300px;
+	background-color: yellow;
+}
+
+.col-4-5 div {
+	height: 300px;
+	background: orange; 
+}
+
+.col-1-6 div {
+	height: 300px;
+	background: red;
+}
+
+.col-5-6 div {
+	height: 300px;
+	background: blue;
+}
+
+.col-1-7 div {
+	height: 300px;
+	background: pink;
+}
+
+.col-5-7 div{
 	height: 300px;
 	background: purple;
 }
 
+.col-2-7 div {
+	height: 300px;
+	background: yellow;
+}
 
+.col-1-8 div {
+	height: 300px;
+	background: blue;
+}
+
+.col-4-8 div {
+	height: 300px;
+	background: green;
+}
+
+.col-1-9 div {
+	height: 300px;
+	background: #C035F1;
+}
+
+.col-3-9 div {
+	height: 300px;
+	background: yellow;
+}
+
+.col-6-9 div {
+	height: 300px;
+	background: red;
+}
+
+.col-1-10 div {
+	height: 300px;
+	background: orange;
+}
+
+.col-2-10 div  {
+	height: 300px;
+	background: green;
+}
+
+.col-8-10 div {
+	height: 300px;
+}
+
+.col-1-11 div {
+	height: 300px;
+	background: red;
+}
+
+.col-5-11 div {
+	height: 300px;
+	background: green;
+}
+
+.col-6-11  div {
+	height: 300px;
+	background: yellow;
+}
+
+.col-1-12 div {
+	height: 300px;
+	background: blue;
+}
+
+.col-7-12 div{
+	height: 300px;
+	background: pink;
+}
+
+.col-5-12  div {
+	height: 300px;
+	background: red;
+}
 
 
 @media screen and (max-width: 480px) {
